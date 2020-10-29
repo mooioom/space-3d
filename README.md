@@ -4,9 +4,6 @@
 Video preview :
     https://bit.ly/3oBcK0x
 
-clone it<br>
-    git clone https://github.com/mooioom/space-3d
-
 Space 3D Engine :: Classes
 <ul>
   <li>Prototype</li>
