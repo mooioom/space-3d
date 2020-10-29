@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="space/space.js"></script>
+
+    <script src="space/modules/studio/js/colorpicker.js"></script>
+    <script src="space/modules/studio/js/frame-ui.js"></script>
+    <script src="space/modules/studio/js/filesaver.js"></script>
+    <script src="space/modules/studio/js/menu.js"></script>
+
+    <link rel="stylesheet" href="space/modules/studio/css/frame-ui.css">
+    <link rel="stylesheet" href="space/modules/studio/css/menu.css">
+
+    <link rel="stylesheet" href="space/modules/studio/css/studio.css">
+    
+    <title>Space Studio</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+
+            window.space = new Space({
+
+                onload : function(){
+
+                    space.require([
+                        'space/modules/studio/studio.js'
+                    ],function(){
+                        space.require([
+                            'space/modules/studio/utils.js',
+                            'space/modules/studio/debugger.js',
+                            'space/modules/studio/keyboard.js',
+                            'space/modules/studio/menu.js',
+                            'space/modules/studio/inspector.js',
+                            'space/modules/studio/toolbox.js',
+                            'space/modules/studio/stage.js',
+                            'space/modules/studio/objects.js',
+                            'space/modules/studio/properties.js',
+                            'space/modules/studio/bottom.js'
+                        ],function(){
+                            new Space.Studio(); 
+                        })
+                    });
+                }
+            });
+        });
+
+    </script>
+</head>
+<body></body>
+</html>

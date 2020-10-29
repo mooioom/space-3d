@@ -1,0 +1,410 @@
+
+canvas{
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(13, 117, 197) !important; 
+}
+
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.file-input{
+    position: absolute;
+    top: 9999;
+    visibility: hidden;
+}
+.studio{
+    font-size: 11px;
+    background: rgb(249, 249, 249);
+    color: rgb(230, 230, 230);
+}
+.top{
+    background: rgb(62, 62, 62);
+    color: #fff;
+}
+
+/* inspector */
+
+.inspector{
+    background: rgb(37, 37, 37);
+    line-height: 35px;
+}
+
+.inspector .block{
+    display: inline-block;
+    text-transform: capitalize;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(239, 239, 239, 0.07);
+}
+
+.inspector .title{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.inspector .button{
+    display: inline-block;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    text-align: center;
+    background: rgb(68, 68, 68);
+    border-radius: 2px;
+    margin-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.inspector .button:hover{
+    background: rgb(12, 100, 169);
+}
+
+.inspector input{
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    position: relative;
+    top: 1px;
+}
+
+.inspector .toggle{
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    background: rgb(68, 68, 68);
+    border-radius: 2px;
+    margin-right: 3px;
+}
+
+.inspector .toggle:last-of-type{
+    margin-right: 0;
+}
+
+.inspector .toggle.on{
+    background: rgb(12, 100, 169);
+}
+
+.middle{}
+
+.bottom{
+    background: rgb(84, 84, 84);
+}
+
+.left-unit{
+    background: rgb(41, 41, 41);
+    color: #fff;
+}
+
+.stage{
+    background: rgb(19, 19, 19);
+}
+
+.right-unit{
+    background: rgb(41, 41, 41);
+    color: rgb(181, 181, 181);
+}
+
+.colorpicker input{
+    color: rgb(255, 255, 255);
+}
+
+.frame-ui-popup.userinput input{
+    border: 1px solid #00BCD4;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.toolbox .frame-ui-module-body{
+    padding: 0;
+    background: none;
+}
+
+.toolbox .menu-item-selected{
+    background: rgb(12, 100, 169) !important;
+}
+
+.toolbox .menu > .menu-item{
+    display: block;
+}
+
+.toolbox .menu > .menu-item:hover{
+    background:#333;
+}
+
+/* stage */
+
+.stage{
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.stage .view{
+    position: relative;
+    box-shadow: 
+    1px 0 0 0 #2b2b2b, 
+    0 1px 0 0 #2b2b2b, 
+    1px 1px 0 0 #2b2b2b,
+    1px 0 0 0 #2b2b2b inset, 
+    0 1px 0 0 #2b2b2b inset;
+}
+
+.stage .view .label{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+}
+
+.stage .view .label .title{
+    padding: 5px;
+    display: inline-block;
+}
+
+.stage .view .label .menu{
+    display: none;
+    background: rgb(41, 41, 41);
+    font-size: 10px;
+}
+
+.stage .view .label .menu > .menu-item{
+    display: block;
+}
+
+.stage .view .label .menu > .menu-item:hover > .menu-items{
+    top:0;
+    left: 100%;
+}
+
+.stage .view .label .menu > .menu-item > .menu-items {
+    background: rgb(59, 59, 59);
+}
+
+.stage .view .label:hover .title{
+    background: #333;
+}
+
+.stage .view .label:hover .menu{
+    display: block;
+}
+
+.stage .view canvas{
+    
+}
+
+/* objects */
+
+.objects-wrapper{
+    max-height: 200px; 
+    overflow: auto;
+}
+
+.objects-empty{
+    padding: 5px;
+}
+
+.object-fitlers{
+    padding: 5px;
+    font-size: 11px;
+}
+
+.object-fitlers select{
+    font-size: 10px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 2px;
+    background: rgb(51, 51, 51);
+    color: #fff;
+}
+
+.object-fitlers select:active,.object-fitlers select:focus{
+    outline: none;
+}
+
+.objects-list{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 10px;
+}
+
+.objects-list td{
+    padding: 3px;
+    /* border: 1px solid rgb(31, 31, 31); */
+}
+
+.objects-list .type{
+    background: rgb(80, 80, 80);
+    width: 18px;
+    text-transform: uppercase;
+    font-size: 8px;
+    text-align: right;
+}
+
+.objects-list .name{
+    padding-left: 3px;
+}
+
+.objects-list .object{
+    border-bottom: 1px solid rgba(80, 80, 80, 0.16);
+}
+
+.objects-list .object.selected td{
+    background: rgb(12, 100, 169) !important;
+    color: #fff;
+}
+
+.objects-list .object.selected .type{
+    background: rgb(14, 119, 202) !important;
+}
+
+.objects-list .object:hover td{
+    background: rgb(96, 125, 139);
+    color: #fff;
+    /* border: 1px solid rgb(76, 76, 76); */
+    cursor: pointer;
+}
+
+/* properties */
+
+.properties{
+}
+
+.properties .head{
+    /* background: rgb(37, 37, 37); */
+    color: #fff;
+    border-bottom: 1px solid rgb(37, 37, 37);
+}
+
+.properties .name{
+    padding: 5px;
+}
+
+.properties .type{
+    padding: 5px;
+    /* background: rgb(39, 39, 39); */
+    text-transform: uppercase;
+}
+
+.properties .menu{}
+
+.properties .menu-item{}
+
+.properties .menu-item:hover{}
+
+.properties .body{
+    padding: 5px;
+}
+
+.properties .button{
+    padding: 5px;
+    background: rgb(49, 49, 49);
+    margin-bottom: 3px;
+    border: 1px solid rgb(37, 37, 37);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.properties .button:hover{
+    background: rgb(12, 100, 169);
+    color: #fff;
+    cursor: pointer;
+}
+
+.properties .property{
+    margin-bottom: 10px;
+}
+
+.properties .property:last-of-type {
+    margin-bottom: 0;
+}
+
+.properties .property .title{
+    background: rgb(27, 27, 27);
+    padding: 5px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.properties .property input{
+    border: none;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(58, 58, 58);
+    color: #fff;
+}
+
+.properties .property input[type="checkbox"]{
+    text-align: left;
+    width: initial;
+    margin: 0;
+    vertical-align: sub;
+    margin-right: 3px;
+}
+
+.properties .vector table{
+    width: 100%;
+    text-align: center;
+    background: rgb(58, 58, 58);
+    border-collapse: collapse;
+}
+
+.properties .vector tr{}
+
+.properties .vector td{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.properties .vector input{
+    text-align: center;
+    padding: 0;
+}
+
+.properties .vector .head td{
+    background: rgb(72, 72, 72);
+}

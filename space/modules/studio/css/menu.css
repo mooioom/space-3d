@@ -1,0 +1,61 @@
+.menu{}
+
+.menu .header{
+    pointer-events: none;
+    /* background: rgb(37, 37, 37); */
+    font-size: 8px;
+    text-align: left !important;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.28);
+    border-bottom: 1px solid rgb(45, 45, 45);
+    margin-top: 10px;
+}
+
+.menu-item{
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1;
+}
+
+.menu-items{
+    position: absolute;
+    min-width: 100px;
+    background: rgb(29, 29, 29);
+}
+
+.menu > .menu-item{
+    display: inline-block;
+    bottom: 0;
+}
+
+.menu > .menu-item:hover{
+    background: rgb(12, 100, 169);
+    position: relative;
+    z-index: 2;
+}
+
+.menu > .menu-item > .menu-items{
+    display: none;
+    left: 0;
+    top: 100%;
+}
+
+.menu > .menu-item:hover > .menu-items{
+    display: block;
+    box-shadow: 0px 0px 10px #00000036;
+}
+
+.menu > .menu-item > .menu-items .menu-item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.menu > .menu-item > .menu-items .menu-item:hover{
+    background: rgb(12, 100, 169);
+}
+
+.menu > .menu-item > .menu-items .menu-item .menu-items{}
+
+.menu .menu-item-toggled{
+    background: rgb(29, 88, 115) !important;
+}
